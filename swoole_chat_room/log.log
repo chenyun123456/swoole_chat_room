@@ -1,0 +1,7 @@
+[2019-08-23 00:34:44 $5573.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:36:21 $5611.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:36:31 $5611.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:37:28 $5656.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:39:32 $5775.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:40:10 $5775.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2019-08-23 00:40:18 $5810.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0

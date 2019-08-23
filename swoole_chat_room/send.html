@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+<input type="text" name="username" id="username">
+<input type="password" name="password" id="password">
+<input type="button" id="bt" value="提交">
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $('#bt').click(function () {
+
+        //var send_json = JSON.stringify(send);
+        WebSocketTest();
+        function WebSocketTest(){
+
+            var ws = new WebSocket("ws://127.0.0.1:9501");
+
+            ws.onopen = function(data)
+            {
+                var send ={};
+                send['username'] = $('#username').val();
+                send['password'] = $('#password').val();
+                send = JSON.stringify(send)
+                console.log(send)
+                ws.send(send);
+                // alert("数据发送中...");
+            };
+
+            ws.onmessage = function (evt)
+            {
+                var received_msg = JSON.parse(evt.data);
+
+                // alert("数据已接收..."+received_msg);
+            };
+
+            ws.onclose = function()
+            {
+
+            };
+        }
+       
+    })
+</script>
+</html>
